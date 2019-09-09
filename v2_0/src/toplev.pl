@@ -94,6 +94,8 @@ next_command(ModuleName, Prog, SymbolTable) :-
    write("DJD top_djd_next_command 00001\n"),
    make_prompts(ModuleName, Prompt1, Prompt2),
    write("DJD top_djd_next_command 00002\n"),
+   write("Enter ;h. for help\n"),
+   write("Enter ;c M1. for current testing\n"),
    ask_to_terminator(Prompt1, Prompt2, Chars),
    write("DJD top_djd_next_command 00003\n"),
    process_command(Chars, SymbolTable, Prog, NewProg, ModuleName,

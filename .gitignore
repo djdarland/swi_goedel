@@ -4,3 +4,6 @@
 djd?
 *.tar
 *.tar.gz
+v2_0/Tests/
+v2_0/src/djd0.pl
+v2_0/src/ts.sh
