@@ -1,4 +1,46 @@
 :- module('Lists', []).
+:- discontiguous 'Lists':'Lists.Member.P2.0'/2.
+:- discontiguous 'Lists':'~Lists.Member.P2.0'/2.
+:- discontiguous 'Lists':'Lists.Delete.P3.0'/3.
+:- discontiguous 'Lists':'~Lists.Delete.P3.0'/3.
+:- discontiguous 'Lists':'Lists.Append.P3.0'/3.
+:- discontiguous 'Lists':'~Lists.Append.P3.0'/3.
+:- discontiguous 'Lists':'Lists.DeleteFirst.P3.0'/3.
+:- discontiguous 'Lists':'~Lists.DeleteFirst.P3.0'/3.
+:- discontiguous 'Lists':'Lists.Length.P2.0'/2.
+:- discontiguous 'Lists':'~Lists.Length.P2.0'/2.
+:- discontiguous 'Lists':'Lists.Permutation.P2.0'/2.
+:- discontiguous 'Lists':'~Lists.Permutation.P2.0'/2.
+:- discontiguous 'Lists':'Lists.Merge.P3.0'/3.
+:- discontiguous 'Lists':'~Lists.Merge.P3.0'/3.
+:- discontiguous 'Lists':'Lists.Merge.P3.0'/3.
+:- discontiguous 'Lists':'~Lists.Merge.P3.0'/3.
+:- discontiguous 'Lists':'Lists.Merge.P3.0'/3.
+:- discontiguous 'Lists':'~Lists.Merge.P3.0'/3.
+:- discontiguous 'Lists':'Lists.MemberCheck.P2.1'/2.
+:- discontiguous 'Lists':'~Lists.MemberCheck.P2.1'/2.
+:- discontiguous 'Lists':'Lists.MemberCheck.P2.1'/2.
+:- discontiguous 'Lists':'~Lists.MemberCheck.P2.1'/2.
+:- discontiguous 'Lists':'Lists.MemberCheck.P2.0'/2.
+:- discontiguous 'Lists':'~Lists.MemberCheck.P2.0'/2.
+:- discontiguous 'Lists':'Lists.Partition.P4'/4.
+:- discontiguous 'Lists':'~Lists.Partition.P4'/4.
+:- discontiguous 'Lists':'Lists.Partition.P4'/4.
+:- discontiguous 'Lists':'~Lists.Partition.P4'/4.
+:- discontiguous 'Lists':'Lists.Sorted.P1.1'/1.
+:- discontiguous 'Lists':'~Lists.Sorted.P1.1'/1.
+:- discontiguous 'Lists':'Lists.Sorted.P1.1'/1.
+:- discontiguous 'Lists':'~Lists.Sorted.P1.1'/1.
+:- discontiguous 'Lists':'Lists.Sorted.P1.0'/1.
+:- discontiguous 'Lists':'~Lists.Sorted.P1.0'/1.
+:- discontiguous 'Lists':'Lists.Sorted.P1.0'/1.
+:- discontiguous 'Lists':'~Lists.Sorted.P1.0'/1.
+:- discontiguous 'Lists':'Lists.Sort.P2.0'/2.
+:- discontiguous 'Lists':'~Lists.Sort.P2.0'/2.
+:- discontiguous 'Lists':'Lists.Reverse3.P3'/3.
+:- discontiguous 'Lists':'~Lists.Reverse3.P3'/3.
+:- discontiguous 'Lists':'Lists.Split.P4'/4.
+:- discontiguous 'Lists':'~Lists.Split.P4'/4.
 
 :- op(500, yfx, and).
 :- op(400, yfx, or).

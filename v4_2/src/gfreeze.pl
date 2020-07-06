@@ -112,8 +112,8 @@ freeze_ground(A, X):-
 	).
 
 
-:- block freeze_on_vlist(?, -,  ?, ?). 
-
+%% :- block freeze_on_vlist(?, -,  ?, ?).  %% Changed BELOW for SWI DJD
+block(freeze_on_vlist).
 freeze_on_vlist([], _, Vlist, X):-
 	freeze_ground(Vlist, X). 
 freeze_on_vlist([Var|Vars], _, Vlist, X):-
@@ -124,8 +124,8 @@ freeze_on_vlist([Var|Vars], _, Vlist, X):-
  * freeze_nonvar_and
  */
 
-:- block freeze_nonvar_and(?, -,  ?). 
-
+%% :- block freeze_nonvar_and(?, -,  ?). %% Changed BELOW for SWI DJD
+block(freeze_nonvar_and).
 freeze_nonvar_and([], _, 1).
 freeze_nonvar_and([Var|Vars], _, X):-
 	freeze_nonvar_and(Vars, Var, X).

@@ -1,4 +1,46 @@
 :- module('Scripts', []).
+:- discontiguous 'Scripts':'Scripts.DelayInKind.P4'/4.
+:- discontiguous 'Scripts':'~Scripts.DelayInKind.P4'/4.
+:- discontiguous 'Scripts':'Scripts.DelayInKind.P4'/4.
+:- discontiguous 'Scripts':'~Scripts.DelayInKind.P4'/4.
+:- discontiguous 'Scripts':'Scripts.HasIntensionalSet.P1'/1.
+:- discontiguous 'Scripts':'~Scripts.HasIntensionalSet.P1'/1.
+:- discontiguous 'Scripts':'Scripts.OpenHeadPred.P2.0'/2.
+:- discontiguous 'Scripts':'~Scripts.OpenHeadPred.P2.0'/2.
+:- discontiguous 'Scripts':'Scripts.ReformatDelays.P3'/3.
+:- discontiguous 'Scripts':'~Scripts.ReformatDelays.P3'/3.
+:- discontiguous 'Scripts':'Scripts.SymbolInFormula.P2'/2.
+:- discontiguous 'Scripts':'~Scripts.SymbolInFormula.P2'/2.
+:- discontiguous 'Scripts':'Scripts.SymbolInFormula.P2'/2.
+:- discontiguous 'Scripts':'~Scripts.SymbolInFormula.P2'/2.
+:- discontiguous 'Scripts':'Scripts.SymbolInFormula.P2'/2.
+:- discontiguous 'Scripts':'~Scripts.SymbolInFormula.P2'/2.
+:- discontiguous 'Scripts':'Scripts.SymbolInFormula.P2'/2.
+:- discontiguous 'Scripts':'~Scripts.SymbolInFormula.P2'/2.
+:- discontiguous 'Scripts':'Scripts.SymbolInFormula.P2'/2.
+:- discontiguous 'Scripts':'~Scripts.SymbolInFormula.P2'/2.
+:- discontiguous 'Scripts':'Scripts.SymbolInFormula.P2'/2.
+:- discontiguous 'Scripts':'~Scripts.SymbolInFormula.P2'/2.
+:- discontiguous 'Scripts':'Scripts.SymbolInFormula.P2'/2.
+:- discontiguous 'Scripts':'~Scripts.SymbolInFormula.P2'/2.
+:- discontiguous 'Scripts':'Scripts.SymbolInFormula.P2'/2.
+:- discontiguous 'Scripts':'~Scripts.SymbolInFormula.P2'/2.
+:- discontiguous 'Scripts':'Scripts.SymbolInFormula.P2'/2.
+:- discontiguous 'Scripts':'~Scripts.SymbolInFormula.P2'/2.
+:- discontiguous 'Scripts':'Scripts.SymbolInFormula.P2'/2.
+:- discontiguous 'Scripts':'~Scripts.SymbolInFormula.P2'/2.
+:- discontiguous 'Scripts':'Scripts.SymbolInFormula.P2'/2.
+:- discontiguous 'Scripts':'~Scripts.SymbolInFormula.P2'/2.
+:- discontiguous 'Scripts':'Scripts.SymbolInFormula.P2'/2.
+:- discontiguous 'Scripts':'~Scripts.SymbolInFormula.P2'/2.
+:- discontiguous 'Scripts':'Scripts.SymbolInFormula.P2'/2.
+:- discontiguous 'Scripts':'~Scripts.SymbolInFormula.P2'/2.
+:- discontiguous 'Scripts':'Scripts.SymbolInTerm.P2'/2.
+:- discontiguous 'Scripts':'~Scripts.SymbolInTerm.P2'/2.
+:- discontiguous 'Scripts':'Scripts.SymbolInTerm.P2'/2.
+:- discontiguous 'Scripts':'~Scripts.SymbolInTerm.P2'/2.
+:- discontiguous 'Scripts':'Scripts.ValidDeclaration.P2'/2.
+:- discontiguous 'Scripts':'~Scripts.ValidDeclaration.P2'/2.
 
 :- op(500, yfx, and).
 :- op(400, yfx, or).

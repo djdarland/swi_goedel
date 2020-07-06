@@ -1,4 +1,10 @@
 :- module('Flocks', []).
+:- discontiguous 'Flocks':'Flocks.DelNthElement.P4'/4.
+:- discontiguous 'Flocks':'~Flocks.DelNthElement.P4'/4.
+:- discontiguous 'Flocks':'Flocks.InsNthElement.P4'/4.
+:- discontiguous 'Flocks':'~Flocks.InsNthElement.P4'/4.
+:- discontiguous 'Flocks':'Flocks.NthElement.P3'/3.
+:- discontiguous 'Flocks':'~Flocks.NthElement.P3'/3.
 
 :- op(500, yfx, and).
 :- op(400, yfx, or).
