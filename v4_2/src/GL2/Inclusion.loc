@@ -1,0 +1,8 @@
+MODULE Inclusion.
+
+% PREDICATE IncludedIn : List(a) * List(a).
+
+% LOCAL IncludedIn.
+
+IncludedIn(x,y) <-
+		ALL [x] (Member(z,y) <- Member(z,x)).

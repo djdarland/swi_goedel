@@ -1,0 +1,9 @@
+MODULE Inclusion.
+
+IMPORT Lists.
+
+% EXPORT IncludedIn.
+
+PREDICATE IncludedIn : List(a) * List(a).
+
+		

@@ -1,0 +1,7 @@
+consult(init).
+goedel.
+;ml Search.
+Run(x).
+
+halt.
+
