@@ -27,7 +27,7 @@ umask 000
 
 
 # Version of STICtus to use:
-set PROLOG = "/usr/local/sicstus4.6.0/bin/sicstus"
+set PROLOG = "swipl"
 
 
 # clear

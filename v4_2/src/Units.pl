@@ -1,5 +1,8 @@
 :- module('Units', []).
 :- multifile '$$module'/1.
+:- discontiguous 'Units':token_id/4.
+:- discontiguous 'Units':token_id/4.
+:- discontiguous 'Units':token_id/4.
 
 :- op(500, yfx, and).
 :- op(400, yfx, or).

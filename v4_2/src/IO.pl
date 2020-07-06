@@ -1,5 +1,7 @@
 :- module('IO', []).
 :- multifile '$$module'/1.
+:- discontiguous 'IO':'IO.WriteCharList.P2'/2.
+:- discontiguous 'IO':'~IO.WriteCharList.P2'/2.
 
 
 :- op(500, yfx, and).

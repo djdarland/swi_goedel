@@ -1,5 +1,7 @@
 :- module('Strings', []).
 :- multifile '$$module'/1.
+:- discontiguous 'Strings':'Strings.Split.P4'/4.
+:- discontiguous 'Strings':'~Strings.Split.P4'/4.
 
 :- op(500, yfx, and).
 :- op(400, yfx, or).

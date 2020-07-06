@@ -1,4 +1,6 @@
 :- module('ProgramCache', []).
+:- discontiguous 'ProgramCache':'ProgramCache.UnCacheProgram.P2'/2.
+:- discontiguous 'ProgramCache':'~ProgramCache.UnCacheProgram.P2'/2.
 
 :- op(500, yfx, and).
 :- op(400, yfx, or).
