@@ -1,0 +1,10 @@
+EXPORT        M1.
+
+BASE          Day, ListOfDay.
+
+CONSTANT      Nil : ListOfDay;
+              Monday, Tuesday, Wednesday, Thursday, Friday, Saturday,
+              Sunday : Day.
+FUNCTION      Cons : Day * ListOfDay -> ListOfDay.
+PREDICATE     Append : ListOfDay * ListOfDay * ListOfDay;
+              Append3 : ListOfDay * ListOfDay * ListOfDay * ListOfDay.

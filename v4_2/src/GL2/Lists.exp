@@ -1,0 +1,7 @@
+EXPORT Lists.
+IMPORT Integers.
+CONSTRUCTOR List/1.
+CONSTANT Nil : List(a).
+FUNCTION Cons : a * List(a) -> List(a).
+PREDICATE Member : a * List(a).
+
