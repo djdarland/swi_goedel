@@ -282,17 +282,17 @@ call_residue(A, B) :-
 djd_copy_char(Stream1, Stream2) :-
 	%% Copy Stream1 to Stream2
 	%% Added 6/7/2020 because cannot do with SICStus directly
-	get_char(Stream1, C),
-	(C \= end_of_file) -> (put_char(Stream2, C),
+	get0(Stream1, C),
+	(C \= end_of_file) -> (put(Stream2, C),
 		     djd_copy_char(Stream1, Stream2))
 	; true.
 
 djd_cat_1(File1, File2, Work3) :-
 	%% cat File1 to File2		%
 	%% Added 6/7/2020 because cannot do with SICStus directly 
-	(open(Work3, write, Stream3, [type(text)])
-	-> open(File1, read, Stream1, [type(text)])
-	-> (open(File2, read, Stream2, [type(text)])
+	(open(Work3, write, Stream3)
+	-> open(File1, read, Stream1)
+	-> (open(File2, read, Stream2)
 	   -> (djd_copy_char(Stream1, Stream3),
 		  djd_copy_char(Stream2, Stream3),
 		  close(Stream1),
@@ -311,8 +311,8 @@ djd_cat_1(File1, File2, Work3) :-
 djd_cp(File1, File2) :-
 		%% Copy File1 to File2
 		%% Added 6/7/2020 because cannot do with SICStus directly
-		(open(File2, write, Stream2, [type(text)])
-		-> (open(File1, read, Stream1, [type(text)])
+		(open(File2, write, Stream2)
+		-> (open(File1, read, Stream1)
 		   -> (djd_copy_char(Stream1, Stream2),
 			  close(Stream1),
 			  close(Stream2))
@@ -326,9 +326,9 @@ djd_cp(File1, File2) :-
 		djd_cat_2(File1, File2, File3) :-
 			%% Copy File1 and then File2 to File3
 			%% Added 6/7/2020 because cannot do with SICStus directly
-			open(File3, write, Stream3, [type(text)])
-			-> (open(File1, read, Stream1, [type(text)])
-			   -> (open(File2, read, Stream2, [type(text)])
+			open(File3, write, Stream3)
+			-> (open(File1, read, Stream1)
+			   -> (open(File2, read, Stream2)
 			      -> (djd_copy_char(Stream1, Stream3),
 				     djd_copy_char(Stream2, Stream3),
 				     close(Stream1),

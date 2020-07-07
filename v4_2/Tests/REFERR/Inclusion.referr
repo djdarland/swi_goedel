@@ -1,21 +1,57 @@
-SICStus 4.6.0 (x86_64-linux-glibc2.17): Mon Apr  6 09:23:37 PDT 2020
-Licensed to SP4.6darlandcomplimentary
-% consulting /home/dennis/src/mine/mng_git/goedel/v4_2/src/init.pl...
-%  loading /usr/local/sicstus4.6.0/bin/sp-4.6.0/sicstus-4.6.0/library/system.po...
-%  module system imported into user
-%   loading /usr/local/sicstus4.6.0/bin/sp-4.6.0/sicstus-4.6.0/library/types.po...
-%   module types imported into system
-%   loaded /usr/local/sicstus4.6.0/bin/sp-4.6.0/sicstus-4.6.0/library/types.po in module types, 2 msec 8208 bytes
-%  loaded /usr/local/sicstus4.6.0/bin/sp-4.6.0/sicstus-4.6.0/library/system.po in module system, 6 msec 28368 bytes
-%  loading /usr/local/sicstus4.6.0/bin/sp-4.6.0/sicstus-4.6.0/library/file_systems.po...
-%  module file_systems imported into user
-%   module types imported into file_systems
-%   module system imported into file_systems
-%   loading /usr/local/sicstus4.6.0/bin/sp-4.6.0/sicstus-4.6.0/library/lists.po...
-%   module lists imported into file_systems
-%    module types imported into lists
-%   loaded /usr/local/sicstus4.6.0/bin/sp-4.6.0/sicstus-4.6.0/library/lists.po in module lists, 9 msec 182976 bytes
-%  loaded /usr/local/sicstus4.6.0/bin/sp-4.6.0/sicstus-4.6.0/library/file_systems.po in module file_systems, 10 msec 255232 bytes
-% consulted /home/dennis/src/mine/mng_git/goedel/v4_2/src/init.pl in module user, 51 msec 411184 bytes
-yes
-% consulting /home/dennis/src/mine/mng_git/goedel/v4_2/src/toplev.pl...
+Welcome to SWI-Prolog (threaded, 64 bits, version 7.6.4)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit http://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Warning: /home/dennis/src/mine/mng_git/swi_goedel/v4_2/src/toplev.pl:467:
+	Singleton variables: [Prompt1]
+ERROR: /home/dennis/src/mine/mng_git/swi_goedel/v4_2/src/gfreeze.pl:133:32: Syntax error: Operator expected
+Warning: /home/dennis/src/mine/mng_git/swi_goedel/v4_2/src/gfreeze.pl:143:
+	Singleton variables: [Delay,X]
+Warning: /home/dennis/src/mine/mng_git/swi_goedel/v4_2/src/term.pl:809:
+	Singleton variable in branch: Remains3
+Warning: /home/dennis/src/mine/mng_git/swi_goedel/v4_2/src/term.pl:972:
+	Singleton variable in branch: Remains3
+Warning: /home/dennis/src/mine/mng_git/swi_goedel/v4_2/src/formula.pl:1018:
+	Singleton variable in branch: Token
+	Singleton variable in branch: Position
+Warning: /home/dennis/src/mine/mng_git/swi_goedel/v4_2/src/formula.pl:1079:
+	Singleton variable in branch: Remains
+Warning: /home/dennis/src/mine/mng_git/swi_goedel/v4_2/src/parser.pl:532:
+	Singleton variable in branch: WhichPart
+ERROR: Type error: `dict' expected, found `'"Integers'' (an atom)
+ERROR: In:
+ERROR:   [27] throw(error(type_error(dict,'"Integers'),_27396))
+ERROR:   [25] '$dicts':'.'('"Integers',[],_27436) at /usr/lib/swi-prolog/boot/dicts.pl:46
+ERROR:   [24] system_module('"Lists','ProgDefs.ModDef.F4'('ProgDefs.ClosedKind.C0',_27472,[],[]),'ProgDefs.Module.F3'('ProgDefs.Hidden.C0','ProgDefs.Categories.F2'(...,...),[]),'AVLTrees.Node.F5'('AVLTrees.Node.F5'(...,'"Length',_27510,'AVLTrees.EQ.C0',...),'"Merge',_27498,'AVLTrees.RH.C0','AVLTrees.Node.F5'(...,'"Reverse',_27522,'AVLTrees.RH.C0',...))) at /home/dennis/src/mine/mng_git/swi_goedel/v4_2/src/sys_modules.pl:38134
+ERROR:   [22] 'SharedPrograms.AddModule.P7'('"Lists','AVLTrees.Node.F5'('AVLTrees.Null.C0','"Inclusion','ProgDefs.ModDef.F4'('ProgDefs.NormalKind.C0',...,[],[]),'AVLTrees.EQ.C0','AVLTrees.Null.C0'),'AVLTrees.Node.F5'('AVLTrees.Null.C0','"','ProgDefs.Module.F3'('ProgDefs.Hidden.C0',...,[]),'AVLTrees.EQ.C0','AVLTrees.Null.C0'),'AVLTrees.Node.F5'('AVLTrees.Null.C0','"Inclusion','ProgDefs.Code.F2'(0,'AVLTrees.Null.C0'),'AVLTrees.EQ.C0','AVLTrees.Null.C0'),_27558,_27560,_27562) at /home/dennis/src/mine/mng_git/swi_goedel/v4_2/src/system.pl:1108
+ERROR:   [20] insert_import_decl_aux(['Lists'],'IMPORT','"Inclusion','ProgDefs.Export.C0','ProgDefs.Program.F4'('"Inclusion','AVLTrees.Node.F5'('AVLTrees.Null.C0','"Inclusion',...,'AVLTrees.EQ.C0','AVLTrees.Null.C0'),'ProgDefs.Language.F1'(...),'AVLTrees.Node.F5'('AVLTrees.Null.C0','"Inclusion',...,'AVLTrees.EQ.C0','AVLTrees.Null.C0')),_27656) at /home/dennis/src/mine/mng_git/swi_goedel/v4_2/src/parser.pl:379
+ERROR:   [19] insert_import_decl([... / 'IMPORT'],'"Inclusion','ProgDefs.Export.C0','ProgDefs.Program.F4'('"Inclusion','AVLTrees.Node.F5'('AVLTrees.Null.C0','"Inclusion',...,'AVLTrees.EQ.C0','AVLTrees.Null.C0'),'ProgDefs.Language.F1'(...),'AVLTrees.Node.F5'('AVLTrees.Null.C0','"Inclusion',...,'AVLTrees.EQ.C0','AVLTrees.Null.C0')),_27732) at /home/dennis/src/mine/mng_git/swi_goedel/v4_2/src/parser.pl:373
+ERROR:   [18] parse_import('"Inclusion',compile,[item(...,2,1),...|...],[item(...,2,1),...],[item(...,2,1),...],_27816,['Inclusion'],_27820,'ProgDefs.Program.F4'('"Inclusion','AVLTrees.Node.F5'('AVLTrees.Null.C0','"Inclusion',...,'AVLTrees.EQ.C0','AVLTrees.Null.C0'),'ProgDefs.Language.F1'(...),'AVLTrees.Node.F5'('AVLTrees.Null.C0','"Inclusion',...,'AVLTrees.EQ.C0','AVLTrees.Null.C0')),_27824) at /home/dennis/src/mine/mng_git/swi_goedel/v4_2/src/parser.pl:358
+ERROR:   [17] parse_module_decl('"Inclusion',compile,[item(...,2,1),...|...],_27958,[item(...,2,1),...],_27962,['Inclusion'],_27966,'ProgDefs.Program.F4'('"Inclusion','AVLTrees.Node.F5'('AVLTrees.Null.C0','"Inclusion',...,'AVLTrees.EQ.C0','AVLTrees.Null.C0'),'ProgDefs.Language.F1'(...),'AVLTrees.Node.F5'('AVLTrees.Null.C0','"Inclusion',...,'AVLTrees.EQ.C0','AVLTrees.Null.C0')),_27970) at /home/dennis/src/mine/mng_git/swi_goedel/v4_2/src/parser.pl:210
+ERROR:   [16] parse_program('Inclusion',compile,_28082) at /home/dennis/src/mine/mng_git/swi_goedel/v4_2/src/parser.pl:62
+ERROR:   [15] check_syntax('Inclusion') at /home/dennis/src/mine/mng_git/swi_goedel/v4_2/src/toplev.pl:876
+ERROR:   [14] command_execution(check_syntax('Inclusion'),null,null,'','',no) at /home/dennis/src/mine/mng_git/swi_goedel/v4_2/src/toplev.pl:203
+ERROR:   [10] next_command('',null,null) at /home/dennis/src/mine/mng_git/swi_goedel/v4_2/src/toplev.pl:93
+ERROR:    [7] <user>
+ERROR: 
+ERROR: Note: some frames are missing due to last-call optimization.
+ERROR: Re-run your program in debug mode (:- debug.) to get more detail.
+ERROR: Syntax error: Operator expected
+ERROR: 
+ERROR: ** here **
+ERROR: ;c Inclusion . 
+ERROR: Syntax error: Operator expected
+ERROR: 
+ERROR: ** here **
+ERROR: ;l Inclusion . 
+ERROR: Syntax error: Operator expected
+ERROR: IncludedI
+ERROR: ** here **
+ERROR: n([1, 3, 2], [4,3, 2, 1]) . 
+ERROR: Syntax error: Operator expected
+ERROR: IncludedI
+ERROR: ** here **
+ERROR: n([1, 5, 2], [4,3, 2, 1]) . 

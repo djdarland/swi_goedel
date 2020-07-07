@@ -45,7 +45,7 @@ my_load(File):-
 	trace,
    sappend(File, '.pl', File3),
    sappend('GL/', File3, File2),
-   open(File2, read, Stream, [type(text)]),
+   open(File2, read, Stream),
    read(Stream, module(ModuleName)),
    abolish_module(ModuleName),
    ( read(Stream, Clause)
@@ -61,7 +61,7 @@ my_load(Path, File2):-
 	trace,
    sappend(File, '.pl', File3),
    sappend('GL/', File3, File2),
-   open(File2, read, Stream, [type(text)]),
+   open(File2, read, Stream),
    read(Stream, module(ModuleName)),
    abolish_module(ModuleName),
    ( read(Stream, Clause)

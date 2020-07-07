@@ -59,7 +59,7 @@ Date:      17 September 1991
 'IO.Get.P2.1'('IO.StdIn.c0', Char) :-
    !,
    prompt(Old, ''),
-   get_byte(user_input, Char),
+   get0(user_input, Char),
    prompt(_, Old).
 
 'IO.Get.P2.1'(ResultOfFind, Char) :-
@@ -68,7 +68,7 @@ Date:      17 September 1991
 
 'IO.Get.P2.1'(ResultOfFind, Char) :-
    translate_stream(ResultOfFind, Stream),
-   get_byte(Stream, Char),
+   get0(Stream, Char),
    check_for_end_of_stream(ResultOfFind, Char).
 
 '~IO.Get.P2'(ResultOfFind, Char) :-
@@ -87,7 +87,7 @@ Date:      17 September 1991
 'IO.ReadChar.P2.1'('IO.StdIn.C0', String) :-
    !,
    prompt(Old, ''),
-   get_byte(user_input, Char),
+   get0(user_input, Char),
    name(String, [0'", Char]),
    prompt(_, Old).
 
@@ -97,7 +97,7 @@ Date:      17 September 1991
 
 'IO.ReadChar.P2.1'(ResultOfFind, String) :-
    translate_stream(ResultOfFind, Stream),
-   get_byte(Stream, Char),
+   get0(Stream, Char),
    ( Char == -1
      -> assert('$end_of_stream'(ResultOfFind)),
         name(String, [0'"])   % return empty string
@@ -120,7 +120,7 @@ Date:      17 September 1991
 'IO.Put.P2.1'(ResultOfFind, Char) :-
    Char >= 0, Char =< 127,
    translate_stream(ResultOfFind, Stream),
-   put_byte(Stream, Char).
+   put(Stream, Char).
 
 '~IO.Put.P2'(ResultOfFind, Char) :-
    'IO.Put.P2'(ResultOfFind, Char).
@@ -140,7 +140,7 @@ check_for_end_of_stream(ResultOfFind, C) :-
 
 'IO.FindInput.P2.1'(FileString, ResultOfFind) :-
    user:gstring2string(FileString, FileName),
-   ( open(FileName, read, Stream, [type(binary)])
+   ( open(FileName, read, Stream)
      -> translate_stream('IO.InputStreamDescriptor.F1'(List), Stream),
 	ResultOfFind = 'IO.In.F1'('IO.InputStreamDescriptor.F1'(List))
      ;  ResultOfFind = 'IO.NotFound.C0'
@@ -156,7 +156,7 @@ check_for_end_of_stream(ResultOfFind, C) :-
 
 'IO.FindOutput.P2.1'(FileString, ResultOfFind) :-
    user:gstring2string(FileString, FileName),
-   ( open(FileName, write, Stream, [type(binary)])
+   ( open(FileName, write, Stream)
      -> translate_stream('IO.OutputStreamDescriptor.F1'(List), Stream),
 	ResultOfFind = 'IO.Out.F1'('IO.OutputStreamDescriptor.F1'(List))
      ;  ResultOfFind = 'IO.NotFound.C0'
@@ -172,7 +172,7 @@ check_for_end_of_stream(ResultOfFind, C) :-
 
 'IO.FindUpdate.P2.1'(FileString, ResultOfFind) :-
    user:gstring2string(FileString, FileName),
-   ( open(FileName, append, Stream, [type(binary)])
+   ( open(FileName, append, Stream)
      -> translate_stream('IO.OutputStreamDescriptor.F1'(List), Stream),
 	ResultOfFind = 'IO.Out.F1'('IO.OutputStreamDescriptor.F1'(List))
      ;  ResultOfFind = 'IO.NotFound.C0'

@@ -1,21 +1,97 @@
-SICStus 4.6.0 (x86_64-linux-glibc2.17): Mon Apr  6 09:23:37 PDT 2020
-Licensed to SP4.6darlandcomplimentary
-% consulting /home/dennis/src/mine/mng_git/goedel/v4_2/src/init.pl...
-%  loading /usr/local/sicstus4.6.0/bin/sp-4.6.0/sicstus-4.6.0/library/system.po...
-%  module system imported into user
-%   loading /usr/local/sicstus4.6.0/bin/sp-4.6.0/sicstus-4.6.0/library/types.po...
-%   module types imported into system
-%   loaded /usr/local/sicstus4.6.0/bin/sp-4.6.0/sicstus-4.6.0/library/types.po in module types, 3 msec 8208 bytes
-%  loaded /usr/local/sicstus4.6.0/bin/sp-4.6.0/sicstus-4.6.0/library/system.po in module system, 11 msec 28368 bytes
-%  loading /usr/local/sicstus4.6.0/bin/sp-4.6.0/sicstus-4.6.0/library/file_systems.po...
-%  module file_systems imported into user
-%   module types imported into file_systems
-%   module system imported into file_systems
-%   loading /usr/local/sicstus4.6.0/bin/sp-4.6.0/sicstus-4.6.0/library/lists.po...
-%   module lists imported into file_systems
-%    module types imported into lists
-%   loaded /usr/local/sicstus4.6.0/bin/sp-4.6.0/sicstus-4.6.0/library/lists.po in module lists, 10 msec 182976 bytes
-%  loaded /usr/local/sicstus4.6.0/bin/sp-4.6.0/sicstus-4.6.0/library/file_systems.po in module file_systems, 20 msec 255232 bytes
-% consulted /home/dennis/src/mine/mng_git/goedel/v4_2/src/init.pl in module user, 67 msec 411184 bytes
-yes
-% consulting /home/dennis/src/mine/mng_git/goedel/v4_2/src/toplev.pl...
+Welcome to SWI-Prolog (threaded, 64 bits, version 7.6.4)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit http://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+Warning: /home/dennis/src/mine/mng_git/swi_goedel/v4_2/src/toplev.pl:467:
+	Singleton variables: [Prompt1]
+ERROR: /home/dennis/src/mine/mng_git/swi_goedel/v4_2/src/gfreeze.pl:133:32: Syntax error: Operator expected
+Warning: /home/dennis/src/mine/mng_git/swi_goedel/v4_2/src/gfreeze.pl:143:
+	Singleton variables: [Delay,X]
+Warning: /home/dennis/src/mine/mng_git/swi_goedel/v4_2/src/term.pl:809:
+	Singleton variable in branch: Remains3
+Warning: /home/dennis/src/mine/mng_git/swi_goedel/v4_2/src/term.pl:972:
+	Singleton variable in branch: Remains3
+Warning: /home/dennis/src/mine/mng_git/swi_goedel/v4_2/src/formula.pl:1018:
+	Singleton variable in branch: Token
+	Singleton variable in branch: Position
+Warning: /home/dennis/src/mine/mng_git/swi_goedel/v4_2/src/formula.pl:1079:
+	Singleton variable in branch: Remains
+Warning: /home/dennis/src/mine/mng_git/swi_goedel/v4_2/src/parser.pl:532:
+	Singleton variable in branch: WhichPart
+Warning: /home/dennis/src/mine/mng_git/swi_goedel/v4_2/src/GL/DB.pl:8:
+	Clauses of 'DB':'DB.Father.P2'/2 are not together in the source-file
+	  Earlier definition at /home/dennis/src/mine/mng_git/swi_goedel/v4_2/src/GL/DB.pl:6
+	  Current predicate: 'DB':'~DB.Father.P2'/2
+	  Use :- discontiguous 'DB':'DB.Father.P2'/2. to suppress this message
+Warning: /home/dennis/src/mine/mng_git/swi_goedel/v4_2/src/GL/DB.pl:9:
+	Clauses of 'DB':'~DB.Father.P2'/2 are not together in the source-file
+	  Earlier definition at /home/dennis/src/mine/mng_git/swi_goedel/v4_2/src/GL/DB.pl:7
+	  Current predicate: 'DB':'DB.Father.P2'/2
+	  Use :- discontiguous 'DB':'~DB.Father.P2'/2. to suppress this message
+Warning: /home/dennis/src/mine/mng_git/swi_goedel/v4_2/src/GL/DB.pl:14:
+	Clauses of 'DB':'DB.Ancestor.P2'/2 are not together in the source-file
+	  Earlier definition at /home/dennis/src/mine/mng_git/swi_goedel/v4_2/src/GL/DB.pl:10
+	  Current predicate: 'DB':'~DB.Ancestor.P2'/2
+	  Use :- discontiguous 'DB':'DB.Ancestor.P2'/2. to suppress this message
+Warning: /home/dennis/src/mine/mng_git/swi_goedel/v4_2/src/GL/DB.pl:17:
+	Clauses of 'DB':'~DB.Ancestor.P2'/2 are not together in the source-file
+	  Earlier definition at /home/dennis/src/mine/mng_git/swi_goedel/v4_2/src/GL/DB.pl:12
+	  Current predicate: 'DB':'DB.Ancestor.P2'/2
+	  Use :- discontiguous 'DB':'~DB.Ancestor.P2'/2. to suppress this message
+Warning: /home/dennis/src/mine/mng_git/swi_goedel/v4_2/src/GL/DB.pl:24:
+	Clauses of 'DB':'DB.Parent.P2'/2 are not together in the source-file
+	  Earlier definition at /home/dennis/src/mine/mng_git/swi_goedel/v4_2/src/GL/DB.pl:20
+	  Current predicate: 'DB':'~DB.Parent.P2'/2
+	  Use :- discontiguous 'DB':'DB.Parent.P2'/2. to suppress this message
+Warning: /home/dennis/src/mine/mng_git/swi_goedel/v4_2/src/GL/DB.pl:26:
+	Clauses of 'DB':'~DB.Parent.P2'/2 are not together in the source-file
+	  Earlier definition at /home/dennis/src/mine/mng_git/swi_goedel/v4_2/src/GL/DB.pl:22
+	  Current predicate: 'DB':'DB.Parent.P2'/2
+	  Use :- discontiguous 'DB':'~DB.Parent.P2'/2. to suppress this message
+Warning: /home/dennis/src/mine/mng_git/swi_goedel/v4_2/src/GL/DB.pl:30:
+	Clauses of 'DB':'DB.Mother.P2'/2 are not together in the source-file
+	  Earlier definition at /home/dennis/src/mine/mng_git/swi_goedel/v4_2/src/GL/DB.pl:28
+	  Current predicate: 'DB':'~DB.Mother.P2'/2
+	  Use :- discontiguous 'DB':'DB.Mother.P2'/2. to suppress this message
+Warning: /home/dennis/src/mine/mng_git/swi_goedel/v4_2/src/GL/DB.pl:31:
+	Clauses of 'DB':'~DB.Mother.P2'/2 are not together in the source-file
+	  Earlier definition at /home/dennis/src/mine/mng_git/swi_goedel/v4_2/src/GL/DB.pl:29
+	  Current predicate: 'DB':'DB.Mother.P2'/2
+	  Use :- discontiguous 'DB':'~DB.Mother.P2'/2. to suppress this message
+ERROR: Arguments are not sufficiently instantiated
+ERROR: In:
+ERROR:   [27] rename_variables_1(['MetaDefs.Var.F2'('"x',0)],[],_102986,['MetaDefs.Var.F2'('"x',_103016)|_103010],_102990,_102992)
+ERROR:   [26] rename_variables(['MetaDefs.Var.F2'('"x',0)],[],_103044,_103046,_103048,_103050) at /home/dennis/src/mine/mng_git/swi_goedel/v4_2/src/transform.pl:417
+ERROR:   [25] transform_body('MetaDefs.~\'.F1'('MetaDefs.Some.F2'(...,...)),[],_103090,_103092,'MetaDefs.Neg.F2'(_103110,_103112),_103096) at /home/dennis/src/mine/mng_git/swi_goedel/v4_2/src/transform.pl:89
+ERROR:   [23] transform_body('MetaDefs.All.F2'([...],'MetaDefs.->\'.F2'(...,...)),'MetaDefs.Neg.F2'(_103162,_103164),_103140) at /home/dennis/src/mine/mng_git/swi_goedel/v4_2/src/transform.pl:41
+ERROR:   [22] toplev_conjunctions('MetaDefs.All.F2'([...],'MetaDefs.->\'.F2'(...,...)),[],[pair(...,_103222)]) at /home/dennis/src/mine/mng_git/swi_goedel/v4_2/src/checking.pl:543
+ERROR:   [21] floundering_checking_goal('MetaDefs.All.F2'([...],'MetaDefs.->\'.F2'(...,...)),_103248) at /home/dennis/src/mine/mng_git/swi_goedel/v4_2/src/checking.pl:408
+ERROR:   [20] process_query([big_name('ALL'),'['|...],'ProgDefs.Program.F4'('"DB','AVLTrees.Node.F5'('AVLTrees.Null.C0','"DB',...,'AVLTrees.EQ.C0','AVLTrees.Null.C0'),'ProgDefs.Language.F1'(...),'AVLTrees.Node.F5'('AVLTrees.Null.C0','"DB',...,'AVLTrees.EQ.C0','AVLTrees.Null.C0')),'ParserPrograms.SymbTab.F4'('"DB','ProgDefs.Module.F3'('ProgDefs.Hidden.C0',...,[]),[...],[])) at /home/dennis/src/mine/mng_git/swi_goedel/v4_2/src/toplev.pl:1115
+ERROR:   [16] next_command('DB','ProgDefs.Program.F4'('"DB','AVLTrees.Node.F5'('AVLTrees.Null.C0','"DB',...,'AVLTrees.EQ.C0','AVLTrees.Null.C0'),'ProgDefs.Language.F1'(...),'AVLTrees.Node.F5'('AVLTrees.Null.C0','"DB',...,'AVLTrees.EQ.C0','AVLTrees.Null.C0')),'ParserPrograms.SymbTab.F4'('"DB','ProgDefs.Module.F3'('ProgDefs.Hidden.C0',...,[]),[...],[])) at /home/dennis/src/mine/mng_git/swi_goedel/v4_2/src/toplev.pl:93
+ERROR:    [7] <user>
+ERROR: 
+ERROR: Note: some frames are missing due to last-call optimization.
+ERROR: Re-run your program in debug mode (:- debug.) to get more detail.
+   Exception: (25) transform_body('MetaDefs.~\'.F1'('MetaDefs.Some.F2'(['MetaDefs.Var.F2'('"x', 0)], 'MetaDefs.~\'.F1'('MetaDefs.->\'.F2'('MetaDefs.Some.F2'(['MetaDefs.Var.F2'('"y', 0)], 'MetaDefs.Atom.F2'('MetaDefs.Name.F4'('"DB', '"Mother', 'MetaDefs.Predicate.C0', 2), ['MetaDefs.Var.F2'('"y', 0), 'MetaDefs.Var.F2'(..., ...)])), 'MetaDefs.Some.F2'(['MetaDefs.Var.F2'('"z', 0)], 'MetaDefs.Atom.F2'('MetaDefs.Name.F4'('"DB', '"Father', 'MetaDefs.Predicate.C0', 2), ['MetaDefs.Var.F2'('"z', 0), 'MetaDefs.Var.F2'(..., ...)])))))), [], _101654, _103516, _101604, _103520) ? ERROR: Syntax error: Operator expected
+ERROR: ALL
+ERROR: ** here **
+ERROR:  [x] (Mother(_, x) -> Father(_, x)) . 
+ERROR: Syntax error: Operator expected
+ERROR: SOME
+ERROR: ** here **
+ERROR:  [z] Mother(x, z) & ~ SOME [y] Father(y, x) . 
+ERROR: Syntax error: Operator expected
+ERROR: Mothe
+ERROR: ** here **
+ERROR: r(x, _) & ~ Father(_, x) . 
+ERROR: Syntax error: Operator expected
+ERROR: x: Paren
+ERROR: ** here **
+ERROR: t(x, y) & Parent(y, Jane) . 
+ERROR: Syntax error: Operator expected
+ERROR: SOME
+ERROR: ** here **
+ERROR:  [y] (Parent(x, y) & Parent(y, Jane)) . 
