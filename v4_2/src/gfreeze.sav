@@ -52,7 +52,6 @@ goedel_freeze(Delay, Goal) :-
  * evaluate_delay
  */
 
-
 evaluate_delay(nonvar(A), A).
 
 evaluate_delay(ground(A), X):-
@@ -62,13 +61,10 @@ evaluate_delay(ground(A), X):-
 evaluate_delay(nonvar_and([Var|Vars]), X):- 
 	freeze_nonvar_and(Vars, Var, X).
 
-/*
-evaluate_delay(nonvar_or(Vars), X):-
-	freeze(\+
+evaluate_delay(nonvar_or(Vars), X):- 
 	prolog:term_variables(Vars, Vlist),	% ensure disj-geler works
-	\+ freeze(Vlist, call(X=1)).
-%%	prolog:'$disjunctive_geler'(Vlist, call(X=1)).
-*/
+	prolog:'$disjunctive_geler'(Vlist, call(X=1)).
+
 evaluate_delay(A and B, X):-
 	evaluate_delay_aux(A and B, X). 
 
@@ -80,7 +76,7 @@ evaluate_delay(A or B, X):-
  * At the moment, only Program and Script terms are removed. 
  * Attention: this may not be the effective way !!!!
  */
-/*
+
 remove_ground_rep([], []).
 remove_ground_rep([Arg|Argus], B) :- 
 	( nonvar(Arg), removable(Arg)
@@ -107,8 +103,7 @@ remove_ground_rep(A, A).
 /*----------------------------------------------------------------------------
  * freeze_ground
  */
-*/
-/*
+
 freeze_ground(A, X):-
 	prolog:term_variables(A, Vlist),
 	( Vlist = []
@@ -124,13 +119,13 @@ freeze_on_vlist([], _, Vlist, X):-
 freeze_on_vlist([Var|Vars], _, Vlist, X):-
 	freeze_on_vlist(Vars, Var, Vlist, X).
 
-*/
+
 /*------------------------------------------------------------------------------
  * freeze_nonvar_and
  */
 
 %% :- block freeze_nonvar_and(?, -,  ?). %% Changed BELOW for SWI DJD
-block(freeze_nonvar_and(?, -, ?)).
+block(freeze_nonvar_and).
 freeze_nonvar_and([], _, 1).
 freeze_nonvar_and([Var|Vars], _, X):-
 	freeze_nonvar_and(Vars, Var, X).
@@ -139,19 +134,13 @@ freeze_nonvar_and([Var|Vars], _, X):-
  * evaluate_delay_aux
  */
 
-
- evaluate_delay_aux(Delay, X):-
-	 true.
-/*	goedel_freeze_aux(Delay, [], Var_list, NewDelay),
+evaluate_delay_aux(Delay, X):-
+	goedel_freeze_aux(Delay, [], Var_list, NewDelay),
 	( var(NewDelay)
-	-> X = 1).
-	
-	;
-	\+ freeze(Var_list, 
-				call(evaluate_delay_aux(NewDelay, X)) )). */
-%	    prolog:'$disjunctive_geler'(Var_list, 
-%				call(evaluate_delay_aux(NewDelay, X)) )
-%	).
+	  -> X = 1
+	  ;  prolog:'$disjunctive_geler'(Var_list, 
+				call(evaluate_delay_aux(NewDelay, X)) )
+	).
 
 % Version F.2
 	
